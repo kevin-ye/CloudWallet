@@ -57,3 +57,15 @@ typings/
 # dotenv environment variables file
 .env
 
+# config
+config.json
+*.cfg
+
+# key, pem
+*.crs
+*.crt
+*.key
+*.pem
+
+# log files
+*.log

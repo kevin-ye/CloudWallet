@@ -2,7 +2,7 @@
   "name": "cloudwallet_backend",
   "version": "1.0.0",
   "description": "Backend for CloudWallet",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.16.3",
-    "mongoose": "^5.0.12"
+    "mongoose": "^5.0.12",
+    "winston": "^2.4.1",
+    "winston-daily-rotate-file": "^3.0.1"
   }
 }
