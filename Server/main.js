@@ -7,7 +7,8 @@ var mongoose = require('mongoose');
 var dbOption = 
     { 
         user: config.DBUser,
-        pass: config.DBPassword
+        pass: config.DBPassword,
+        uri_decode_auth: true 
     };
 
 app.get("/lightcontrol/get/", function (req, res) {
