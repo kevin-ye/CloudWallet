@@ -25,6 +25,6 @@ mongoose.connect(config.DBURL, dbOption).then(
     },
     err => 
     {
-        logger.error("Failed to connect to CloudWallet database.");
+        logger.error("Failed to connect to CloudWallet database. " + err);
     }
 );
