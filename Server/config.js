@@ -6,6 +6,8 @@ var config = {
     LogLevel: 0,
     Port: 10000,
     DBURL: "",
+    DBUser: "",
+    DBPassword: ""
 }
 
 var cfgContent;
@@ -18,6 +20,6 @@ if (fs.existsSync(common.ConfigPath)) {
 }
 
 // loading variables
-config = cfgContent
+config = cfgContent;
 
 module.exports = config;
