@@ -68,4 +68,5 @@ config.json
 *.pem
 
 # log files
+Log/
 *.log

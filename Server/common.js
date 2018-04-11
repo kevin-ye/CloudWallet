@@ -1,7 +1,10 @@
+var path = require('path');
+var root = path.dirname(require.main.filename);
+
 const common = {
     /* ****************** Values to be changed apon deployment ************************ */
-    ConfigPath: './Config/config.json',
-    LogPath: './Log/HomeControl.log'
+    ConfigPath: root + '/Config/config.json',
+    LogPath: root + '/Log/CloudWallet.log'
     /* ******************************************************************************** */
 };
 
