@@ -10,7 +10,7 @@ var config = {
     DBPassword: ""
 }
 
-var cfgContent;
+var cfgContent = {};
 
 if (fs.existsSync(common.ConfigPath)) {
     cfgFile = fs.readFileSync(common.ConfigPath);
@@ -20,6 +20,10 @@ if (fs.existsSync(common.ConfigPath)) {
 }
 
 // loading variables
-config = cfgContent;
+var currentCfg = {};
+for (var key in cfgContent)
+{
+    config[key] = cfgContent[key];
+}
 
 module.exports = config;

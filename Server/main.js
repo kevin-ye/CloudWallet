@@ -7,16 +7,14 @@ var mongoose = require('mongoose');
 var dbOption = 
     { 
         user: config.DBUser,
-        pass: config.DBPassword,
-        uri_decode_auth: true 
+        pass: config.DBPassword, 
+        autoReconnect: true
     };
 
 app.get("/lightcontrol/get/", function (req, res) {
     logger.info(req);
     res.send("return");
 });
-
-
 
 mongoose.connect(config.DBURL, dbOption).then(
     () => 
